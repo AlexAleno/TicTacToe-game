@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
     <Grid>
-<Image x:Name="Grid" HorizontalAlignment="Center" Source="Images/Grid.png" Width="100" Height="100" Margin="0,0,0,23" RenderTransformOrigin="2.506,2.112" VerticalAlignment="Bottom"/>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -19,7 +19,22 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Image x:Name="Grid" HorizontalAlignment="Center" Source="Images/Grid.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
         
-    </Grid>
+        <Image x:Name="Zero0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="1" MouseDown="All_MouseDown"/>
+        <Image x:Name="Zero1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="2"/>
+        <Image x:Name="Zero2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="3"/>
 
+        <Image x:Name="One0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="1"/>
+        <Image x:Name="One1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Image x:Name="One2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+
+        <Image x:Name="Two0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="1"/>
+        <Image x:Name="Two1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Image x:Name="Two2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+
+
+
+    </Grid>
+    
 </Window>

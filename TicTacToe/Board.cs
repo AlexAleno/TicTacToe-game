@@ -21,5 +21,17 @@ namespace TicTacToe
 
             }
         }
+        public bool turn = false;
+        public void Turn(int x, int y) {
+            if (turn)
+            {
+                board[x, y] = PlayerEnum.X;
+                turn = false;
+            }
+            else {
+                board[x, y] = PlayerEnum.O;
+                turn = true;
+            }
+        }
     }
 }

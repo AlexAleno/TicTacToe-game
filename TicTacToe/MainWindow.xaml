@@ -20,5 +20,5 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
     </Grid>
-       
+    <Image Source="Grid.png">
 </Window>

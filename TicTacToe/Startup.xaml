@@ -8,7 +8,7 @@
         Title="Startup" Height="450" Width="800">
     <Grid>
         <Label Content="Choose X or O (X usually plays first)" HorizontalAlignment="Left" Margin="82,44,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Source="Images/tic-tac-toe_x.png" Height="100" Margin="95,111,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image HorizontalAlignment="Left" Source="Images/tic-tac-toe_o.png" Height="100" Margin="244,111,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="x_image" HorizontalAlignment="Left" Source="Images/tic-tac-toe_x.png" Height="100" Margin="95,111,0,0" VerticalAlignment="Top" Width="100" MouseDown="x_image_MouseDown"/>
+        <Image x:Name="o_image" HorizontalAlignment="Left" Source="Images/tic-tac-toe_o.png" Height="100" Margin="244,111,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

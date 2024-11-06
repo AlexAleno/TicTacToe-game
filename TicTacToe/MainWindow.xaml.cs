@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace TicTacToe
 {
     /// <summary>
@@ -19,6 +20,11 @@ namespace TicTacToe
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void All_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

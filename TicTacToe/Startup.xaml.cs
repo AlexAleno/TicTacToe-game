@@ -23,5 +23,12 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
+        private void x_image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

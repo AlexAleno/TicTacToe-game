@@ -10,7 +10,7 @@
     <Grid>
         <Label Content="Start New Game" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,0.238"/>
         <Label Content="Choose X or O (X usually plays first)" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top"/>
-        <Image Source="Images/tic-tac-toe_x.png" Height="100" Margin="0,0,330,373" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-        <Image Source="Images/tic-tac-toe_o.png" Height="100" Margin="330,0,0,373" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Image Source="Images/tic-tac-toe_x.png" Height="100" Margin="0,0,330,373" VerticalAlignment="Bottom" HorizontalAlignment="Right"  MouseDown="x_image_MouseDown"/>
+        <Image Source="Images/tic-tac-toe_o.png" Height="100" Margin="330,0,0,373" VerticalAlignment="Bottom" HorizontalAlignment="Left"  MouseDown="x_image_MouseDown"/>
     </Grid>
 </Window>

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
     <Grid>
-
+<Image x:Name="Grid" HorizontalAlignment="Center" Source="Images/Grid.png" Width="100" Height="100" Margin="0,0,0,23" RenderTransformOrigin="2.506,2.112" VerticalAlignment="Bottom"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -19,6 +19,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
     </Grid>
-    <Image Source="Grid.png">
+
 </Window>

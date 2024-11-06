@@ -8,4 +8,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Grid.png" />
+    <None Remove="Images\tic-tac-toe_1181538.png" />
+    <None Remove="Images\tic-tac-toe_o.png" />
+    <None Remove="Images\tic-tac-toe_x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Grid.png" />
+    <Resource Include="Images\tic-tac-toe_1181538.png" />
+    <Resource Include="Images\tic-tac-toe_o.png" />
+    <Resource Include="Images\tic-tac-toe_x.png" />
+  </ItemGroup>
+
 </Project>

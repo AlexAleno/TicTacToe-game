@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="Startup" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Startup" Height="600" Width="600">
     <Grid>
-        <Label Content="Choose X or O (X usually plays first)" HorizontalAlignment="Left" Margin="82,44,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Source="Images/tic-tac-toe_x.png" Height="100" Margin="95,111,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image HorizontalAlignment="Left" Source="Images/tic-tac-toe_o.png" Height="100" Margin="244,111,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Start New Game" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,0.238"/>
+        <Label Content="Choose X or O (X usually plays first)" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top"/>
+        <Image Source="Images/tic-tac-toe_x.png" Height="100" Margin="0,0,330,373" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Image Source="Images/tic-tac-toe_o.png" Height="100" Margin="330,0,0,373" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
     </Grid>
 </Window>

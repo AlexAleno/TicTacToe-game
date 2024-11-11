@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="600">
+        Title="MainWindow" Height="425" Width="330">
     <Grid>
-
-        <Grid.ColumnDefinitions>
+        <Grid.Background>
+      <ImageBrush ImageSource="Images/Grid.png" AlignmentY="Top" Stretch="Uniform"/>
+  </Grid.Background>
+                <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -19,22 +21,23 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Image x:Name="Grid" HorizontalAlignment="Center" Source="Images/Grid.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+
         
-        <Image x:Name="Zero0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="1" MouseDown="All_MouseDown"/>
-        <Image x:Name="Zero1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="2"/>
-        <Image x:Name="Zero2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Grid.RowSpan="3"/>
+            <Image x:Name="Zero0"  HorizontalAlignment="Center" Source="Images/white.png "  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="0" MouseDown="All_MouseDown"/>
+        <Image x:Name="Zero1" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" MouseDown="All_MouseDown"/>
+        <Image x:Name="Zero2" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="2" MouseDown="All_MouseDown"/>
 
-        <Image x:Name="One0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="1"/>
-        <Image x:Name="One1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Image x:Name="One2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+        <Image x:Name="One0" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="0" MouseDown="All_MouseDown"/>
+        <Image x:Name="One1" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" MouseDown="All_MouseDown"/>
+        <Image x:Name="One2" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" MouseDown="All_MouseDown"/>
 
-        <Image x:Name="Two0" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="1"/>
-        <Image x:Name="Two1" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-        <Image x:Name="Two2" HorizontalAlignment="Center" Source="Images/white.png" Stretch="Fill" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
-
+        <Image x:Name="Two0" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="0" MouseDown="All_MouseDown"/>
+        <Image x:Name="Two1" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="1" MouseDown="All_MouseDown"/>
+        <Image x:Name="Two2" HorizontalAlignment="Center" Source="Images/white.png"  Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="2" MouseDown="All_MouseDown"/>
+        
 
 
     </Grid>
+    
     
 </Window>

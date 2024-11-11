@@ -13,6 +13,7 @@
     <None Remove="Images\tic-tac-toe_1181538.png" />
     <None Remove="Images\tic-tac-toe_o.png" />
     <None Remove="Images\tic-tac-toe_x.png" />
+    <None Remove="Images\white.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
     <Resource Include="Images\tic-tac-toe_1181538.png" />
     <Resource Include="Images\tic-tac-toe_o.png" />
     <Resource Include="Images\tic-tac-toe_x.png" />
+    <Resource Include="Images\white.png" />
   </ItemGroup>
 
 </Project>

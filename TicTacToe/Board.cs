@@ -8,6 +8,7 @@ namespace TicTacToe
 {
     class Board
     {
+        public bool turn = false;
         private PlayerEnum[,] board = new PlayerEnum[3, 3];
         public Board()
         {
@@ -21,8 +22,9 @@ namespace TicTacToe
 
             }
         }
-        public bool turn = false;
+        
         public void Turn(int x, int y) {
+            
             if (turn)
             {
                 board[x, y] = PlayerEnum.X;

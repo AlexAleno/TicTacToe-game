@@ -20,24 +20,26 @@ namespace TicTacToe
         public MainWindow()
         {
             InitializeComponent();
-
+            
         }
 
         private void All_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Board board = new Board();
             Image img = (Image)sender;
-if (board.turn)
-            {
-                img.Source = new BitmapImage(new Uri(@"Image/tic-tac-toe_o.png", UriKind.Relative));
-            }
-            else
-            {
-                img.Source = new BitmapImage(new Uri(@"Image/tic-tac-toe_x.png", UriKind.Relative));
-            }
             int y=Grid.GetColumn(img);
             int x=Grid.GetRow(img);
             board.Turn(x, y);
+            
+            if (board.getTurn())
+            {
+                img.Source = new BitmapImage(new Uri(@"Images/tic-tac-toe_o.png", UriKind.Relative));
+            }
+            else
+            {
+                img.Source = new BitmapImage(new Uri(@"Images/tic-tac-toe_x.png", UriKind.Relative));
+            }
+            
             
 
         }

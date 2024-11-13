@@ -26,6 +26,16 @@ namespace TicTacToe
 
         private void x_image_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Board board = new Board();
+            board.setTurn(true);
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+        private void o_image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Board board = new Board();
+            board.setTurn(false);
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();

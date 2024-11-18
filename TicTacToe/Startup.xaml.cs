@@ -44,7 +44,7 @@ namespace TicTacToe
             this.ywins = 0;
             SGamePlayed.Text = $"Game Played: {games}";
             SXWins.Text = $"X Wins: {xwins}, WinRatio: {(games > 0 ? ((double)xwins / games) * 100 : 0):F2} %";
-            SOWins.Text = $"X Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
+            SOWins.Text = $"O Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
         }
 
         private void x_image_MouseDown(object sender, MouseButtonEventArgs e)

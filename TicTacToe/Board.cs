@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 
 namespace TicTacToe
 {
-    class Board
+    public class Board
     {
-        public static bool turn;
-        private static PlayerEnum[,] board = new PlayerEnum[3, 3];
+        private PlayerEnum turn;
+        private PlayerEnum[,] board = new PlayerEnum[3, 3];
         public Board()
         {
 
@@ -23,25 +24,70 @@ namespace TicTacToe
             }
         }
 
-        public void Turn(int x, int y)
+        public bool Turn(int x, int y, out PlayerEnum win)
         {
+            board[x, y] = turn;
+            PlayerEnum winner;
+            if (isOver(turn, x, y, out winner))
+            {
+                win = winner;
+                return true;
+            }
 
-            if (turn)
-            {
-                board[x, y] = PlayerEnum.X;
-                turn = false;
-            }
-            else if (turn == false)
-            {
-                board[x, y] = PlayerEnum.O;
-                turn = true;
-            }
+            win = PlayerEnum.NONE;
+            if (turn == PlayerEnum.X)
+                turn = PlayerEnum.O;
+            else if (turn == PlayerEnum.O)
+                turn = PlayerEnum.X;
+            return false;
         }
-        public bool getTurn()
+
+        public bool isNotSet(int x, int y)
+        {
+            return board[x, y] == PlayerEnum.NONE;
+        }
+
+        public bool isOver(PlayerEnum player, int x, int y, out PlayerEnum winner)
+        {
+            winner = player;
+            for (int i = 0; i < 3; i++)
+            {
+                if (board[x, i] != player)
+                    break;
+                if (i == 2 && board[x, 2] == player)
+                    return true;
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (board[i, y] != player)
+                    break;
+                if (i == 2 && board[2, y] == player)
+                    return true;
+            }
+
+            if ((board[0, 0] == player && board[1, 1] == player && board[2, 2] == player) || (board[2, 0] == player && board[1, 1] == player && board[0, 2] == player))
+                return true;
+
+            winner = PlayerEnum.NONE;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (board[i, j] != PlayerEnum.NONE)
+                        return false;
+                    if (i == 2 && j == 2)
+                        return true;
+                }
+            }
+            return false;
+        }
+
+        public PlayerEnum getTurn()
         {
             return turn;
         }
-        public void setTurn(bool turnNow)
+        public void setTurn(PlayerEnum turnNow)
         {
             turn = turnNow;
         }

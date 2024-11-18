@@ -30,7 +30,7 @@ namespace TicTacToe
             this.ywins = ywins;
             GamePlayed.Text = $"Game Played: {games}";
             XWins.Text = $"X Wins: {xwins}, WinRatio: {(games > 0 ? ((double) xwins / games) * 100 : 0):F2} %";
-            OWins.Text = $"X Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
+            OWins.Text = $"O Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
             PlayerTurn.Text = $"Turn: {board.getTurn()}";
         }
 

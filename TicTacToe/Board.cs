@@ -74,7 +74,7 @@ namespace TicTacToe
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    if (board[i, j] != PlayerEnum.NONE)
+                    if (board[i, j] == PlayerEnum.NONE)
                         return false;
                     if (i == 2 && j == 2)
                         return true;

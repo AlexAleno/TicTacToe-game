@@ -33,7 +33,7 @@ namespace TicTacToe
             SWon.Text = $"Last Game was Won By: {winner}";
             SGamePlayed.Text = $"Game Played: {games}";
             SXWins.Text = $"X Wins: {xwins}, WinRatio: {(games > 0 ? ((double)xwins / games) * 100 : 0):F2} %";
-            SOWins.Text = $"X Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
+            SOWins.Text = $"O Wins: {ywins}, WinRatio: {(games > 0 ? ((double)ywins / games * 100) : 0):F2}%";
         }
 
         public Startup()
